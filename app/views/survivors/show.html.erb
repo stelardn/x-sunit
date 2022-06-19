@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @survivor %>
+
+<div>
+  <%= link_to "Edit this survivor", edit_survivor_path(@survivor) %> |
+  <%= link_to "Back to survivors", survivors_path %>
+
+  <%= button_to "Destroy this survivor", @survivor, method: :delete %>
+</div>
